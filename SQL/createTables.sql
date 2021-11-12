@@ -29,6 +29,13 @@ restockDate DATE,
 FOREIGN KEY (fID) REFERENCES Flower(fID)
 );
 
+DROP TABLE IF EXISTS Customer;
+CREATE TABLE Customer (
+cName VARCHAR(50) NOT NULL UNIQUE,
+bID INT,
+FOREIGN KEY(bID) REFERENCES Bouquet(bID),
+);
+
 
 /* Populating tables with data */
 INSERT INTO Flower VALUES("Rose", "red", 3, 1001);
