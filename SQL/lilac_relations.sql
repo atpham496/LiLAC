@@ -133,9 +133,10 @@ delimiter ;
 
 select * from Flower;
 select * from Bouquet;
+select * from Florist;
 select * from Customer
 order by cID ASC;
-select * from Florist;
+select * from Sale;
 
 -- a potential relation for the User to see
 select Customer.cName, Bouquet.bName, Sale.cID, Sale.bID, Sale.pricePaid, Sale.packaging
